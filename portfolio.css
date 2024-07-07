@@ -1,4 +1,4 @@
-ul {
+.nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -23,6 +23,19 @@ ul {
   }
   .container {
     background-color: #0e0202;
-    height:100vh;
-    position: relative;
+    height:800px;
+    margin: 0;
   }
+.home {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  }
+  .btn {
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: #0e0202;
+  }
+
+  

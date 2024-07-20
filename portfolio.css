@@ -147,13 +147,14 @@ body {
 
 .project-item {
     flex: 1 1 calc(50% - 20px); /* Two items per row */
-    background-color: rgb(212, 242, 15);
+    background-color: rgb(0, 195, 255);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     text-align: center;
     color: black;
+    position: relative;
 }
 
 .project-item:hover {
@@ -162,10 +163,13 @@ body {
 
 .project-media {
     position: relative;
+    overflow: hidden;
 }
 
 .project-media img {
-    width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
     border-radius: 20px;
 }
 
@@ -177,10 +181,14 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 .project-item:hover .project-media video {
     opacity: 1;
+    pointer-events: auto;
+    
 }
 
 .project-title {
